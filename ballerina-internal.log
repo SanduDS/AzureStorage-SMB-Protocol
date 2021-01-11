@@ -1,0 +1,52 @@
+[2021-01-08 19:18:14,910] SEVERE {b7a.log.crash} - Ballerina langlib package cannot be found in Ballerina distribution: org=ballerina, name=lang. 
+java.lang.IllegalStateException: Ballerina langlib package cannot be found in Ballerina distribution: org=ballerina, name=lang.
+	at io.ballerina.projects.internal.environment.DefaultPackageResolver.lambda$resolveLangLibPackage$0(DefaultPackageResolver.java:181)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at io.ballerina.projects.internal.environment.DefaultPackageResolver.resolveLangLibPackage(DefaultPackageResolver.java:179)
+	at io.ballerina.projects.internal.environment.DefaultPackageResolver.resolveFromRepository(DefaultPackageResolver.java:115)
+	at io.ballerina.projects.internal.environment.DefaultPackageResolver.resolvePackages(DefaultPackageResolver.java:79)
+	at io.ballerina.projects.PackageResolution.createDependencyGraphFromSources(PackageResolution.java:237)
+	at io.ballerina.projects.PackageResolution.getDependencyGraphWithPackageDescriptors(PackageResolution.java:197)
+	at io.ballerina.projects.PackageResolution.buildDependencyGraph(PackageResolution.java:132)
+	at io.ballerina.projects.PackageResolution.<init>(PackageResolution.java:59)
+	at io.ballerina.projects.PackageResolution.from(PackageResolution.java:66)
+	at io.ballerina.projects.PackageContext.getResolution(PackageContext.java:174)
+	at io.ballerina.projects.PackageCompilation.from(PackageCompilation.java:80)
+	at io.ballerina.projects.PackageContext.getPackageCompilation(PackageContext.java:167)
+	at io.ballerina.projects.Package.getCompilation(Package.java:117)
+	at io.ballerina.cli.task.CompileTask.execute(CompileTask.java:68)
+	at io.ballerina.cli.TaskExecutor.executeTasks(TaskExecutor.java:40)
+	at io.ballerina.cli.cmd.BuildCommand.execute(BuildCommand.java:238)
+	at java.base/java.util.Optional.ifPresent(Unknown Source)
+	at org.ballerinalang.tool.Main.main(Main.java:57)
+ 
+[2021-01-11 11:09:46,796] SEVERE {b7a.log.crash} - there are test failures 
+java.lang.RuntimeException: there are test failures
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:78)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:61)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:53)
+ 
+[2021-01-11 11:23:05,838] SEVERE {b7a.log.crash} - there are test failures 
+java.lang.RuntimeException: there are test failures
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:78)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:61)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:53)
+ 
+[2021-01-11 11:28:30,393] SEVERE {b7a.log.crash} - there are test failures 
+java.lang.RuntimeException: there are test failures
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:78)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:61)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:53)
+ 
+[2021-01-11 12:19:40,756] SEVERE {b7a.log.crash} - there are test failures 
+java.lang.RuntimeException: there are test failures
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:78)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:61)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:53)
+ 
+[2021-01-11 12:20:26,104] SEVERE {b7a.log.crash} - there are test failures 
+java.lang.RuntimeException: there are test failures
+	at org.ballerinalang.test.runtime.util.TesterinaUtils.executeTests(TesterinaUtils.java:78)
+	at org.ballerinalang.test.runtime.Main.startTestSuit(Main.java:61)
+	at org.ballerinalang.test.runtime.Main.main(Main.java:53)
+ 
